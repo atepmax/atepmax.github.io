@@ -11,6 +11,9 @@
     <!--Bootstrap Icon-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css" />
 
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- My CSS -->
     <link rel="stylesheet" href="style.css" />
 
@@ -68,10 +71,10 @@
           </div>
         </div>
         <div class="row justify-content-center fs-5 text-center">
-          <div class="col-md-4">
+          <div class="col-md-4" data-aos="fade-right" data-aos-duration="1000">
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem fugit consectetur exercitationem eveniet quas laboriosam omnis iure distinctio neque adipisci.</p>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore ducimus eos, ullam pariatur quaerat iusto nobis a consequatur molestiae placeat?</p>
           </div>
         </div>
@@ -203,6 +206,11 @@
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
     <script>
       const scriptURL = "https://script.google.com/macros/s/AKfycbyyjvINoI3VkPBJGqRLERXUk9Wpn-9y8yPLN3DNzMoA8etKUhcJZwNoHy067zDRz2eYKw/exec";
