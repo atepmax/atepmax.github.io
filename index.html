@@ -21,7 +21,7 @@
   </head>
   <body id="home">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm navbar fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm navbar fixed-top" data-aos="fade-down">
       <div class="container">
         <a class="navbar-brand" href="#" Atep Koswara>
           <img src="projects/flame.png" alt="" width="20" height="30" class="d-inline-block align-text-top" />
@@ -52,9 +52,9 @@
 
     <!-- Jumbotron -->
     <section class="jumbotron text-center">
-      <img src="img/Ateps.jpg" alt="AtepKoswara" width="200" class="rounded-circle img-thumbnail" />
-      <h1 class="display-4">Atep Koswara</h1>
-      <p class="lead">Web Developer</p>
+      <img src="img/Ateps.jpg" alt="AtepKoswara" width="200" class="rounded-circle img-thumbnail" data-aos="fade-in" />
+      <h1 class="display-4" data-aos="zoom-in">Atep Koswara</h1>
+      <p class="lead" data-aos="zoom-in">Web Developer</p>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#ffffff"
@@ -67,17 +67,17 @@
 
     <!-- About -->
     <section id="about">
-      <div class="container">
+      <div class="container" data-aos="fade-in">
         <div class="row text-center mb-3">
           <div class="col">
             <h2>About Me</h2>
           </div>
         </div>
         <div class="row justify-content-center fs-5 text-center">
-          <div class="col-md-4" data-aos="fade-right" data-aos-duration="1000">
+          <div class="col-md-4" data-aos="fade-right">
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem fugit consectetur exercitationem eveniet quas laboriosam omnis iure distinctio neque adipisci.</p>
           </div>
-          <div class="col-md-4" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+          <div class="col-md-4" data-aos="fade-left" data-aos-delay="200">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore ducimus eos, ullam pariatur quaerat iusto nobis a consequatur molestiae placeat?</p>
           </div>
         </div>
@@ -94,7 +94,7 @@
 
     <!-- Projects -->
     <section id="projects">
-      <div class="container">
+      <div class="container" data-aos="fade-in">
         <div class="row text-center mb-3">
           <div class="col">
             <h2>My Projects</h2>
@@ -156,7 +156,7 @@
 
     <!-- Contact -->
     <section id="contact">
-      <div class="container">
+      <div class="container" data-aos="fade-in">
         <div class="row text-center mb-3">
           <div class="col">
             <h2>Contact Me</h2>
@@ -212,7 +212,10 @@
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init();
+      AOS.init({
+        duration: 1000,
+        once: true,
+      });
     </script>
 
     <script>
